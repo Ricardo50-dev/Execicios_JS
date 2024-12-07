@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_ex_Quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Maia Quiz</h1>
+        <p class="description">Leia a questão e clique na resposta correta</p>
+        <div class="card">
+            <div class="pergunta">
+                <div class="numero"></div>
+                <div class="enunciado"></div>
+            </div>
+            <div class="alternativa textoAlternativa" id="a" onclick="verificaAcertou(this)">
+            </div>
+            <div class="alternativa textoAlternativa" id="b" onclick="verificaAcertou(this)">
+            </div>
+            <div class="alternativa textoAlternativa" id="c" onclick="verificaAcertou(this)">
+            </div>
+            <div class="alternativa textoAlternativa" id="d" onclick="verificaAcertou(this)">
+            </div>   
+
+        </div>
+        <input type="range" min='1' max='10' step='1' value='1' id="contagem" disabled/>
+        <p class="numContagem"></p>
+        <footer id='autoria' class='centro'>Desenvolvido por Ricardo Lima &copy; 2024</footer>            
+    </div>
+    <audio preload src="assets/media/positive.mp3" id='somAcerto'></audio>
+    <audio preload src="assets/media/negative.mp3" id='somErro'></audio>
+    <audio preload src="assets/media/aplausos.mp3" id='somAplausos'></audio>
+    <script src="assets/js/ex_Quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(49, 49, 49);
+    height: 100vh;
+    width: 100%;
+}
+.cards{
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: white;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#celsius_value, #fahrenheit_value, #kelvin_value{
+    text-align: end;
+    width: 80px;
+    background-color: white;
+    border: none;
+    color: black;
+    border-radius: 1px;
+    margin: 0 5px;
+}
+.row-sup{
+    margin-bottom: 10px;
+}
+h1{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+p{
+    margin-bottom: 20px;
+}
+.btn-zerar{
+    background-color: lightgray;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin-bottom: 20px;
+}
+button:hover{
+    cursor: pointer;
+}

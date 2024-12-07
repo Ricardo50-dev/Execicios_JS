@@ -1,0 +1,71 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: JetBrains Mono;
+}
+.nome-app{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 25px 100px;
+}
+.campo-tarefa{
+    margin: 25px 100px;
+}
+.input-tarefa{
+    background-color: lightblue;
+    border: solid 1px black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+.campo-lista{
+    margin: 25px 100px;
+}
+.tarefa{
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.tarefa:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: #3f51b5;
+    color: white;
+}
+.cb{
+    width: 25px;
+    height: 25px;
+    accent-color: green;
+}
+.btn-close{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+}
+.desc-tarefa{
+    font-size: 13px;
+    margin-left: 10px;
+    width: 80%;
+}
+.tarefa > input[type='checkbox']:checked + div {
+    text-decoration:line-through;
+}
+@media (max-width: 720px) {
+    .nome-app, .campo-tarefa, .campo-lista{
+        margin: 25px 40px;
+    }
+}

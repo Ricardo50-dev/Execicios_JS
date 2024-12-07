@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_ex_IMC.css">
+    <title>IMC</title>
+</head>
+
+<body>
+    <form action="" method="POST">
+        <div class="formulario-container">
+            <h1>Calculadora de IMC</h1>
+            <label>Nome</label>
+            <input id="nome" type="text" name=""><br>
+            <label>Idade</label>
+            <input id="idade" type="number" name=""><br>
+            <label>Peso</label>
+            <input id="peso" step="0.01" type="number" name=""><br>
+            <label>Altura</label>
+            <input id="altura" step="0.01" type="number" name=""><br>
+            <div class="formulario-bnt">
+                <button id="bntEnviar" type="submit" name="">Enviar</button>
+                <button id="bntReset" type="reset" name="">Limpar</button><br>
+            </div>
+            <label>IMC</label>
+            <input id="imc" type="text" disabled>
+            <span id="resultado"></span>
+        </div>
+    </form>
+    <script src="assets/js/ex_IMC.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_ex_Blog_Videos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <p class="logo-texto">TweedyBlog</p>
+
+        </div>
+        <div class="login">
+            <i class="fa fa-solid fa-user"></i>
+        </div>
+    </header>
+    <div class="line"></div>
+    <div class="principal">
+        <iframe class="frame" width="560" height="315" src="https://www.youtube.com/embed/n6YPYceO4kw"
+            title="The Teleporting Queen Strategy!" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="secundario">
+        <!-- LISTA 1 -->
+        <h3 class="conteudos">Conteudo</h3>
+        <article class="categorias">
+            <button id="btnPrev" onclick="show(-1, 1)">&lt;</button>
+            <ul id='lista1' class="videos">
+                
+            </ul>
+            <button id="btnNext" onclick="show(+1, 1)">&gt;</button>
+        </article>
+        <!-- LISTA 2 -->
+        <h3 class="conteudos">Conteudo</h3>
+        <article class="categorias">
+            <button id="btnPrev" onclick="show(-1, 2)">&lt;</button>
+            <ul id='lista2' class="videos">
+                
+            </ul>
+            <button id="btnNext" onclick="show(+1, 2)">&gt;</button>
+        </article>
+        <!-- LISTA 3 -->
+        <h3 class="conteudos">Conteudo</h3>
+        <article class="categorias">
+            <button id="btnPrev" onclick="show(-1, 3)">&lt;</button>
+            <ul id='lista3' class="videos">
+                
+            </ul>
+            <button id="btnNext" onclick="show(+1, 3)">&gt;</button>
+        </article>
+        <!-- LISTA 4 -->
+        <h3 class="conteudos">Conteudo</h3>
+        <article class="categorias">
+            <button id="btnPrev" onclick="show(-1, 4)">&lt;</button>
+            <ul id='lista4' class="videos">
+                
+            </ul>
+            <button id="btnNext" onclick="show(+1, 4)">&gt;</button>
+        </article>
+        <!-- LISTA 5 -->
+        <h3 class="conteudos">Conteudo</h3>
+        <article class="categorias">
+            <button id="btnPrev" onclick="show(-1, 5)">&lt;</button>
+            <ul id='lista5' class="videos">
+                
+            </ul>
+            <button id="btnNext" onclick="show(+1, 5)">&gt;</button>
+        </article>
+        <!-- LISTA 6 -->
+        <h3 class="conteudos">Conteudo</h3>
+        <article class="categorias">
+            <button id="btnPrev" onclick="show(-1, 6)">&lt;</button>
+            <ul id='lista6' class="videos">
+                
+            </ul>
+            <button id="btnNext" onclick="show(+1, 6)">&gt;</button>
+        </article>
+    </div>
+    <!-- Janela Modal nela vamos abrir os videos -->
+    <div id="abrirModal" class="modal">
+        <div>
+            <a href="#fechar" onclick="fecharModal()" title="Fechar" class="fechar">x</a>
+            <iframe id='iframeVideo' width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!-- autoplay; -->
+        </div>
+    </div>
+    
+    <div class="line"></div>
+    <footer>
+        <p>TweedyBlog &copy; Produzido por Ricardo Filho - 2024</p>
+    </footer>
+
+    <script src="assets/js/ex_Blog_Videos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: white;
+}
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: black;
+    border-radius: 15px;
+}
+.hora{
+    display: flex;
+    flex-direction: row;
+}
+.horas, .minutos, .segundos, .hora{
+    color: rgb(35, 250, 250);
+    font-size: 75px;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.semana{
+    margin-right: 10px;
+    color: lightgreen;
+
+}
+.data_hoje{
+    color: rgb(221, 74, 214);
+}
+.semana, .data_hoje{
+    font-size: 45px;
+}
+
+.cidade{
+    margin-top: 50px;
+}
+.cidade, .graus_umidade{
+    font-size: 30px;
+}
+
+.celcius{
+    margin-right: 15px;
+}
+.graus_umidade{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_ex_Citacao.css">
+    <title>Citação</title>
+</head>
+
+<body>
+    <div id="abrirModal" class="modal">
+        <div>
+            <a href="#fechar" title="Fechar" class="fechar">x</a>
+            <h2>Aviso</h2>
+            <p>É obrigatório escolher uma data, digitar uma citação e autoria antes de postar. </p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Mensagem motivacional</h1>
+        <p>Esse é seu app de mensegens para te motivar</p>
+        
+        <label class="espacamento" for="data">Data</label>
+        <input type="date" name="data" id="data">
+        <label class="espacamento" for="cit">Citação</label>
+        <textarea rows="4" name="cit" placeholder="Digite a citação aqui" id="citacao"> </textarea>
+        <label class="espacamento" for="autor">Autoria</label>
+        <input type="text" name="autor" placeholder="Digite quem é o(a) autor(a) da citação" id="autor">
+
+        <div class="botoes">
+            <button class="btn-criar" type="button">Criar</button>
+            <button class="btn-limpar" type="button">Limpar</button>
+        </div>
+        
+    </div>
+    
+    <section class="conteudo">
+        <p id='aviso2'></p>
+        <div class="citacaoIMG fundo">
+            <h2></h2>
+            <blockquote></blockquote>
+            <span></span>
+        </div>
+    </section>
+    
+    <script src="assets/canvas/html2canvas.js"></script>
+    <script src="assets/js/ex_Citacao.js"></script>
+</body>
+
+</html>

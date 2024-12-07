@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.numero{
+    background-color: #673ab7;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.bntSortear{
+    height: 50px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #673ab7;
+    font-size: 30px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+#sorteado {
+    background: #311b92;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+/* Animar o dado */
+@keyframes mover {
+    0% {
+        transform: translateY(0px); /* mover no eixo Y vertical */
+        transform: rotate(45deg);   /* rotacionar 90 graus */
+        opacity: 0; /* opacidade 0 = 100% transparente */
+       }
+    50% {
+        transform:scale(50%); /* mudar tamanho para 50% */
+    }
+    100% {
+        transform: translateY(-15px);  /* mover no eixo Y vertical */
+        transform: rotate(-45deg);     /* rotacionar -90 graus */
+        opacity: 1; /* opacidade 1 = 0% transparente */
+    }
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 0; /* opacidade 0 = 100% transparente */
+    }
+    from {
+        opacity: 1; /* opacidade 1 = 0% transparente */
+    }
+}
+
+.animar {
+    animation: mover 0.5s infinite alternate;
+    /*
+    animation: mover .5s infinite alternate;
+    animation: mover .5s linear infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+.aparecer {
+    animation: aparecer 1.5s ease-in;
+}

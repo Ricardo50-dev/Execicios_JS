@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_ex_CRUD.css">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <div class="titulo">
+        Cadastro de Clientes
+    </div>
+    <div class="container">
+        <button type="button" onclick="abrirModal()" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+        <table id="tableClient" class="records rotated">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <!-- Modal para cadastrar e editar um usuário -->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Novo Cliente</h2>
+                <span class="modal-fechar" id="modal-fechar">&#10006;</span>
+            </div>
+            <form id="form" class="modal-body">
+                <input type="text" id="nome-cliente" data-index="new" class="modal-inp" placeholder="Nome do Cliente" required />
+                <input type="email" id="email-cliente" class="modal-inp" placeholder="Email do Cliente" required />
+                <input type="text" id="telefone-cliente" class="modal-inp" placeholder="Telefone do Cliente" required />
+                <input type="text" id="cidade-cliente" class="modal-inp" placeholder="Cidade do Cliente" required />
+            </form>
+            <div class="modal-footer">
+                <button id="salvar" onclick="salvarCliente()" class="green button">Salvar</button>
+                <button id="cancelar" class="red button">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal para excluir um usuário -->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Excluir Cliente</h2>
+                <span class="modal-fechar" id="modal-fechar2">&#10006;</span>
+            </div>
+            <div class="modal-aviso">
+                Deseja realmente excluir o cliente Mateus
+            </div>
+            <div class="modal-footer">
+                <button id="apagar" class="yellow button">Apagar</button>
+                <button id="cancelar2" class="red button">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>TweedyBlog &copy; Produzido por Ricardo Filho - 2024</p>
+    </footer>
+
+    <script src="assets/js/ex_CRUD.js"></script>
+</body>
+
+</html>

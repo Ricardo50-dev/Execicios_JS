@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_ex_Moedas.css">
+    <title>Moedas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas</h1>
+        <div class="marginTop">
+            <label>R$</label>
+            <input class="inpValor" tabindex="1" type="number" onClick='ativarBotao()' 
+            onChange='ativarBotao()'/>
+        </div>
+        <div class="form-group marginTop">
+            <input type="radio" name="moedaEstrangeira" id='dolar' value='Dolar' tabindex="2" class="radio">
+            <label for="dolar">Dolár</label>
+            <input type="radio" name="moedaEstrangeira" id='euro' value='Euro' tabindex="3" class="marginLeft radio">
+            <label for="euro">Euro</label>
+            <input type="radio" name="moedaEstrangeira" id='libra' value='Libra' tabindex="4" class="marginLeft radio">
+            <label for="libra">Libra</label>
+            <input type="radio" name="moedaEstrangeira" id='bitcoin' value='Bitcoin' tabindex="5" class="marginLeft radio">
+            <label for="bitcoin">Bitcoins</label>
+        </div>
+        <div class="marginTop">
+            <button class="btn-env" onClick='ativarBotao(); bloquearBotao()' disabled>Converter</button>
+            <button class="btn-res">Limpar</button>
+        </div>
+        <input class="marginTop inpTexto" type="text" tabindex="6" disabled placeholder="Digite o valor, escolha a moeda e converta!"/>
+        <figure id='imgMoedas' class='centro'>
+            <img class='animar marginTop' src="assets/img/Bitcoin.png" alt="bit" width='100px'/>
+            <img class='animar marginTop' src="assets/img/Bitcoin.png" alt="bit" width='100px'/>
+            <img class='animar marginTop' src="assets/img/Bitcoin.png" alt="bit" width='100px'/>
+            <img class='animar marginTop' src="assets/img/Bitcoin.png" alt="bit" width='100px'/>
+        </figure>
+    </div>
+    <script src="assets/js/ex_Moedas.js"></script>
+</body>
+</html>

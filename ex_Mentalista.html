@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_ex_Mentalista.css">
+    <title>Mentalista</title>
+</head>
+
+<body onload="criaNumero()">
+    <div id="container">
+        <h1 class="textos">Adivinhar número secreto</h1>
+        <h2 class="textos">Digite um número entre 1 e 10</h2>
+        <input class="espaco inpNum" type="number" id="inputChute" />
+        <button class="espaco bntChutar" id="bntChutar" onclick="jogar()">Chutar</button>
+        <button class="espaco bntMusica" id="bntMusica">♫</button>
+        <p id="aviso"></p>
+    </div>
+    <audio preload autoplay loop id="musicaDeFundo" src="assets/media/sherlok.mp3"></audio>
+    <script src="assets/js/ex_Mentalista.js"></script>
+</body>
+
+</html>
