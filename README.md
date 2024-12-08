@@ -1,4 +1,4 @@
-# Execicios_JS
+# Exercicios_JS
 Repositório para exercícios envolvendo JavaScript Básico
 - Cada exercício representa um arquivo HTML;
 - As especificações de cada exercício será detalhada adiante.
