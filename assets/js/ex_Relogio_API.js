@@ -83,7 +83,7 @@ function pegarData(){
 }
   
 function fetchApi() {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=Araxa&APPID=2d47665f48adeedc6f76cbcb51389264`
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=Araxa&APPID=id`
     fetch(url)
     .then((data) => {
         return data.json()
